@@ -20,55 +20,66 @@
 
     <main>
         <div id="top-main">
+            <div id="top-container">
             <p>This is not a real online service! You know you need something 
             <br> like this in your life to help you realize your deepest dreams. 
             <br> Sign up now to get started</p>
             <br>
-
             <p>You know you want to.</p>
+        </div>
         </div>
 
         <div id="forum">
-            <p>Let's do this!</p>
+            <p id="forum-main-title">Let's do this!</p>
 
             <div id="forum-container">
-                <div id="fname">
-                    <label for="fname">FIRST NAME</label>
-                    <input type="text" name="fname" id="fname">
+
+                <div id="left-form">
+                    <div id="fname">
+                        <label for="fname" class="input-title">FIRST NAME</label>
+                        <input type="text" name="fname" id="fname" class="input">
+                    </div>
+
+                    <div id="email">
+                        <label for="email" class="input-title">EMAIL</label>
+                        <input type="email" name="email" id="email" class="input">
+                    </div>
+
+                    <div id="password">
+                        <label for="password" class="input-title">PASSWORD</label>
+                        <input type="password" name="password" id="password" class="input">
+                    </div>
+               
+
                 </div>
 
-                <div id="lname">
-                    <label for="lname">LAST NAME</label>
-                    <input type="text" name="lname" id="lname">
-                </div>
+                <div id="right-form">
 
-                <div id="email">
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email">
-                </div>
+                    <div id="lname">
+                        <label for="lname" class="input-title">LAST NAME</label>
+                        <input type="text" name="lname" id="lname" class="input">
+                    </div>
 
-                <div id="phone">
-                    <label for="phone">PHONE NUMBER</label>
-                    <input type="tel" name="phone" id="phone">
-                </div>
+                    <div id="phone">
+                        <label for="phone" class="input-title">PHONE NUMBER</label>
+                        <input type="tel" name="phone" id="phone" class="input">
+                    </div>
 
-                <div id="password">
-                    <label for="password">PASSWORD</label>
-                    <input type="password" name="password" id="password">
-                </div>
-
-                <div id="confirm">
-                    <label for="password">CONFIRM PASSWORD</label>
-                    <input type="password" name="confirm" id="confirm">
+                    <div id="confirm">
+                        <label for="password" class="input-title">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm" id="confirm" class="input">
+                    </div>
                 </div>
             </div>
         </div>
 
         <div id="bottom-main">
+            <div id="bottom-container">
             <button id="btn">Create Account</button>
 
             <div id="bottom-txt-container">
-                <p id="bottom-txt">Already have an account?</p><a href="">Log in</a>
+                <p id="bottom-txt">Already have an account? <a href="">Log in</a></p>
+            </div>
             </div>
         </div>
     </main>

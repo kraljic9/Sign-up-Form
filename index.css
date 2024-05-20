@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 body {
@@ -55,19 +56,110 @@ main {
     grid-column: 2;
     display: flex;
     flex-direction: column;
+    
 }
 
 #top-main {
     height: 35%;
-    border: 1px solid orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: lightgray;
+    width: 100%;
+    padding: 15px;
+    font-weight: bolder;
 }
+
+#top-container {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+    
+}   
 
 #forum {
     height: 30%;
-    border: 1px solid purple;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 15px;
+}
+
+#forum-main-title {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+#forum-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 50px;
+    margin-bottom: 10px;
+}
+
+#right-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+#left-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.input-title {
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border:2px solid gray;
 }
 
 #bottom-main {
     height: 35%;
-    border: 1px solid palevioletred;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    width: 100%;
 }
+
+#bottom-container {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#btn {
+    width: 18%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color:rgb(56, 107, 47);
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+#bottom-txt {
+    font-weight: bold;
+}
+
+#bottom-txt > a {
+    color: rgb(56, 107, 47);
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
