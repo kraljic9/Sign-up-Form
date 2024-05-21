@@ -9,6 +9,7 @@ body {
     display: grid;
     grid-template-rows: 1fr 2fr;
     grid-template-columns: 1fr 2fr;
+    overflow-x: hidden;
 
 }
 
@@ -23,17 +24,22 @@ aside {
 }
 
 #banner {
-    background-color: black;
+    background-color: rgb(0, 0, 0, 0.5);
     display: flex;
     width:100%;
     height:20%;
     justify-content: center;
     align-items: center;
     margin-top: 21%;
+    position: relative;
 }
 
 #banner-img {
     width: 10%;
+    position: absolute;
+    right: 65%;
+    z-index: 1;
+    opacity: 1;
 }
 
 h1 {
@@ -51,7 +57,6 @@ span {
 }
 
 main {
-    border: 1px solid blue;
     grid-row: 1 / 3;
     grid-column: 2;
     display: flex;
@@ -83,6 +88,7 @@ main {
     gap: 20px;
     width: 100%;
     padding: 15px;
+    
 }
 
 #forum-main-title {
@@ -138,6 +144,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin-top: 20px;
 }
 
 #btn {
@@ -161,5 +168,12 @@ main {
     text-align: center;
 }
 
+.error {
+    border: 2px solid red;
+}
+
+.accept {
+    border: 2px solid green;
+}
 
 
